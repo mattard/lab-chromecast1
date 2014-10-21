@@ -1,6 +1,6 @@
 $(function() {
 	var applicationID = '75233FD1',
-		namespace = 'urn:x-cast:bccom.chromcast.innovationDay',
+		namespace = 'urn:x-cast:bccom.chromcast.innovationday',
 		session = null;
 
 	$(document).ready(function() {
