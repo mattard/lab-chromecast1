@@ -1,9 +1,10 @@
 body {
 	width: 100%;
 	height: 100%;
+	margin: 0px;
 
 	text-align:center;
-	
+	overflow: hidden;
 	background-color: #000;
 	color: white;
 	
@@ -12,24 +13,21 @@ body {
 }
 
 iframe {
-	width: 100%;
-	height: 100%;
 	border: 0px;
+	height: 200px;
+	width: 300px;
+	overflow: hidden !important;
 }
 
-div#leftColumn {
-	position: absolute;
-	left: 0px;
-	
-	width: 70%;
-	
-	border-right: 3px solid white;
-}
 div#rightColumn {
 	position: absolute;
 	right: 0px;
+	top: 0px;
+	
+	background-color: #000;
 	
 	width: 30%;
+	height: 100%;
 }
 
 div#container {

@@ -5,27 +5,14 @@
 		
 		<link rel="stylesheet" type="text/css" href="css/receiver.css"></link>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
 		<script type="text/javascript" src="scripts/receiver.js"></script>
-		<script>
-			console.log = function(message){
-				$('#consolelogs').html($('#consolelogs').html() + message + "<br>");
-			};
-		</script>
-		
-		<script type="text/javascript" src="http://tools.whatsthescore.com/load.min.js?241"></script>
 	</head>
 	<body>
-		<div id="leftColumn">
-			<iframe src="http://google.com"></iframe>
-		</div>
+		<img src="images/freekick.gif" style="width: 100%; height: 100%;">
 		<div id="rightColumn">
-			<div id="container">
-				<div data-type="livescore" data-id="61094" id="wgt-61094" class="tap-sport-tools" style="width:440px; height:450px;"></div>
-				<div id="message">Talk to me</div>
-				<div id="consolelogs">
-			</div>
+			<iframe src="stats.html"></iframe>
 		</div>
 	</body>
 </html>
