@@ -10,7 +10,7 @@
     <script type="text/javascript" src="scripts/receiver.js"></script>
     <script>
       console.log = function(message){
-        $('.consolelogs').html(message + "</br>");
+        $('.consolelogs').html($('.consolelogs').html() + message + "</br>");
       };
     </script>
   </head>

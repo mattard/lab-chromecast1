@@ -51,7 +51,7 @@ $(document).ready(function() {
       // utility function to display the text message in the input field
       function displayText(text) {
         console.log(text);
-        $('.message').html($('.message').html() + text);
+        $('.message').html(text);
         window.castReceiverManager.setApplicationState(text);
       };
 
