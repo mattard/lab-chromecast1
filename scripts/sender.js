@@ -137,7 +137,12 @@
 	 */
 	function update() {
 		console.log("updated");
-	  sendMessage('test');
+		var o = {
+			status: 0,
+			streamUrl: "https://google.com"
+		};
+
+	  sendMessage(JSON.stringify(o));
 	}
 
 	/**
