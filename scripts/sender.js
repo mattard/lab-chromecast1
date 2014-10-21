@@ -135,10 +135,11 @@
 	/**
 	 * utility function to handle text typed in by user in the input field
 	 */
-	function update() {
+	function update(value) {
+
 		console.log("updated");
 		var o = {
-			status: 0,
+			status: value,
 			streamUrl: "https://google.com"
 		};
 
