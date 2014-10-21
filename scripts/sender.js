@@ -136,7 +136,8 @@
 	 * utility function to handle text typed in by user in the input field
 	 */
 	function update() {
-	  sendMessage($('#input').val());
+		console.log("updated");
+	  sendMessage('test');
 	}
 
 	/**
