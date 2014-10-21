@@ -1,4 +1,4 @@
-$(function() {
+
 	var applicationID = '75233FD1',
 		namespace = 'urn:x-cast:bccom.chromcast.innovationday',
 		session = null;
@@ -6,7 +6,11 @@ $(function() {
 	$(document).ready(function() {
 		$('#input').focus();
 	});
-		
+	
+	$('form').submit(function() {
+		update();
+	});
+	
 	/**
 	 * Call initialization for Cast
 	 */
@@ -136,7 +140,7 @@ $(function() {
 	 * utility function to handle text typed in by user in the input field
 	 */
 	function update() {
-	  sendMessage(document.getElementById("input").value);
+	  sendMessage($('#input').val());
 	}
 
 	/**
@@ -146,4 +150,3 @@ $(function() {
 	function transcribe(words) {
 	  sendMessage(words);
 	}
-});

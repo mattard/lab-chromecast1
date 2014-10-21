@@ -3,10 +3,10 @@
 	<head>
 		<title>Innovation Day - Chromecast Prototype</title>
 		
-		<link type="text/css" src="css/sender.css"></link>
+		<link rel="stylesheet" type="text/css" href="css/sender.css"></link>
 		
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script type="text/javascript" src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 		<script type="text/javascript" src="scripts/sender.js"></script>
 	</head>
 
@@ -14,7 +14,7 @@
 		<table id="wrapper">
 			<tr>
 				<td>
-					<form method="get" action="JavaScript:update();">
+					<form method="get">
 						<input id="input" class="border" type="text" size="30" onwebkitspeechchange="transcribe(this.value)" x-webkit-speech/>
 					</form>
 				</td>
