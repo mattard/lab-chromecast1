@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	$('#size').html($(window).height() + 'x' + $(window).width());
+	
 	cast.receiver.logger.setLevelValue(0);
 	window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
 	console.log('Starting Receiver Manager');
