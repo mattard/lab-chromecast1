@@ -40,6 +40,9 @@ $(document).ready(function() {
     var data = JSON.parse(event.data);
 	  displayText(data.status);
     console.log(data);
+    $('.scoreboard').hide();
+    $('.scoreboard.type-'+data.status).show();
+
 
 	  // inform all senders on the CastMessageBus of the incoming message event
 	  // sender message listener will be invoked
