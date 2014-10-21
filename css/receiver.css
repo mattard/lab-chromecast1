@@ -1,21 +1,33 @@
 body {
 	overflow:hidden;
 	text-align:center;
-}
-
-div.message{
 	
-	text-align:center;
-	border:0px solid silver;
-	display: table-cell;
-	vertical-align:middle;
-	color:#FFFFFF;
-	background-color:#000000;
-	font-weight:bold;
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:40px;
+	background-color: #000;
+	color: white;
+	
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 40px;
 }
 
-div.consolelogs{
-	color:red;
+div#container {
+	position: absolute;
+	top: 40%;
+}
+
+div#message {
+	text-align:center;
+	
+	vertical-align:middle;
+}
+
+div#consolelogs{
+	color: red;
+	margin-top: 15px;
+	
+	font-size: 20px;
+}
+
+div {
+	width: 100%;
+	text-align: center;
 }

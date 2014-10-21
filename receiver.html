@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Cast Hello Text</title>
-	
-	<link rel="stylesheet" type="text/css" href="css/receiver.css"></link>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
-    <script type="text/javascript" src="scripts/receiver.js"></script>
-    <script>
-      console.log = function(message){
-        $('.consolelogs').html($('.consolelogs').html() + message + "</br>");
-      };
-    </script>
-  </head>
-  <body>
-<h1>Your Cast Message</h1>
-	<div class="message">Talk to me</div>
-  <div class="consolelogs">
-
+	<head>
+		<title>Cast Hello Text</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/receiver.css"></link>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
+		<script type="text/javascript" src="scripts/receiver.js"></script>
+		<script>
+			console.log = function(message){
+				$('#consolelogs').html($('#consolelogs').html() + message + "<br>");
+			};
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="message">Talk to me</div>
+			<div id="consolelogs">
+		</div>
   </div>
   </body>
 </html>
