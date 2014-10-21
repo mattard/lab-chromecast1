@@ -8,11 +8,21 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
 		<script type="text/javascript" src="scripts/sender.js"></script>
+    <script>
+      function onStart(){
+        update('1');
+        $('.cast').hide();
+        $('.tabs').show();
+      }
+    </script>
 	</head>
 
 	<body>
 
-    <button onclick="update()">Cast</button>
+    <button class="cast" onclick="onStart()">Cast</button>
+    <button id="tab1" style="display:none" class="tabs" onclick="update('1')">All</button>
+    <button id="tab2" style="display:none" class="tabs" onclick="update('2')">Live</button>
+
 		<!-- <table id="wrapper">
 			<tr>
 				<td>
