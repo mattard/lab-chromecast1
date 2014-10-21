@@ -1,0 +1,21 @@
+{
+  "name": "lab-chromecast1",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mattard/lab-chromecast1",
+  "authors": [
+    "creatordave <david.mifsud89@gmail.com>"
+  ],
+  "description": "innovation day project",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
