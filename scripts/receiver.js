@@ -1,4 +1,4 @@
-window.onload = function() {
+$(document).ready(function() {
         cast.receiver.logger.setLevelValue(0);
         window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
         console.log('Starting Receiver Manager');
@@ -46,7 +46,7 @@ window.onload = function() {
         // initialize the CastReceiverManager with an application status message
         window.castReceiverManager.start({statusText: "Application is starting"});
         console.log('Receiver Manager started');
-      };
+});
       
       // utility function to display the text message in the input field
       function displayText(text) {
@@ -54,3 +54,7 @@ window.onload = function() {
         document.getElementById("message").innerHTML=text;
         window.castReceiverManager.setApplicationState(text);
       };
+
+
+
+

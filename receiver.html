@@ -8,8 +8,16 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
     <script type="text/javascript" src="scripts/receiver.js"></script>
+    <script>
+      console.log = function(message){
+        $('.consolelogs').html(message + "</br>");
+      };
+    </script>
   </head>
   <body>
-	<div id="message">Talk to me</div>
+	<div class="message">Talk to me</div>
+  <div class="consolelogs">
+
+  </div>
   </body>
 </html>
