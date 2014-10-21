@@ -1,12 +1,27 @@
 body {
 	overflow:hidden;
+<<<<<<< HEAD
 	background-color: #000;
 	
+=======
+}
+
+div.message{
+	height:720PX;
+	width:1280PX;
+	text-align:center;
+	border:0px solid silver;
+	display: table-cell;
+	vertical-align:middle;
+	color:#FFFFFF;
+	background-color:#000000;
+>>>>>>> origin/master
 	font-weight:bold;
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:40px;
 }
 
+<<<<<<< HEAD
 div#message {
 	margin: auto;
 	
@@ -22,4 +37,8 @@ div#console {
 	margin: auto;
 	
 	color: #880000;
+=======
+div.consolelogs{
+	color:red;
+>>>>>>> origin/master
 }
