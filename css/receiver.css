@@ -1,4 +1,9 @@
 body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+
 	overflow:hidden;
 	text-align:center;
 	
@@ -7,6 +12,21 @@ body {
 	
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 40px;
+}
+
+div#leftColumn {
+	position: absolute;
+	left: 0px;
+	
+	width: 80%;
+	
+	border-right: 3px solid white;
+}
+div#rightColumn {
+	position: absolute;
+	right: 0px;
+	
+	width: 20%;
 }
 
 div#container {
