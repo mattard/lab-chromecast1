@@ -7,10 +7,6 @@
 		$('#input').focus();
 	});
 	
-	$('form').submit(function() {
-		update();
-	});
-	
 	/**
 	 * Call initialization for Cast
 	 */
