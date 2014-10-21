@@ -5,18 +5,14 @@ body {
 
 	text-align:center;
 	overflow: hidden;
-	background-color: #000;
 	color: white;
 	
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 40px;
 }
 
-iframe {
-	border: 0px;
-	height: 200px;
-	width: 300px;
-	overflow: hidden !important;
+img#logo {
+	margin: 15px;
 }
 
 div#rightColumn {
@@ -24,10 +20,12 @@ div#rightColumn {
 	right: 0px;
 	top: 0px;
 	
-	background-color: #000;
+	background-color: #fff;
 	
 	width: 30%;
 	height: 100%;
+	
+	text-align: left;
 }
 
 div#container {
