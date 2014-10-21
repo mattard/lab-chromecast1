@@ -136,6 +136,7 @@
 	 * utility function to handle text typed in by user in the input field
 	 */
 	function update(value) {
+
 		console.log("updated");
 		var o = {
 			status: value,
