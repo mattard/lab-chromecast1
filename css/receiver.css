@@ -3,8 +3,7 @@ body {
 }
 
 div.message{
-	height:720PX;
-	width:1280PX;
+	
 	text-align:center;
 	border:0px solid silver;
 	display: table-cell;
