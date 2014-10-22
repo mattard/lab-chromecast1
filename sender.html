@@ -36,13 +36,17 @@ $(document).ready(function(){
       .selected{
 color: red;
       }
+
+      .tab-buttons.hide-buttons{
+        display:none;
+      }
     </style>
 	</head>
 
 	<body>
     
     <a href="" style="display:block;width:40px;height:40px;margin:25px" class="cast"><img width="40px" src="images/casticon.png" alt=""/></a>
-    <div style="margin:10px">
+    <div style="margin:10px" class="tab-buttons hide-buttons">
       <a href="" id="tab1" style="display:none" class="tabs selected" onclick="update('1')">Football</a> |
       <a href="" id="tab2" style="display:none" class="tabs" onclick="update('2')">Tennis</a>
   </div>
