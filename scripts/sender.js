@@ -128,6 +128,7 @@
 	 */
 	function appendMessage(message) {
 	  console.log(message);
+	  $('.tab-buttons').removeClass('hide-buttons');
 	  var dw = document.getElementById("debugmessage");
 	  dw.innerHTML += '\n' + JSON.stringify(message);
 	};
