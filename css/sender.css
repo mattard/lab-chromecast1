@@ -6,7 +6,7 @@ html, body, #wrapper {
    border: 0;
 }
 body{
-  background: url("../images/mainbg.png") top center;
+  background: url("../images/mainbg.png") top center no-repeat;
 }
 
 #wrapper td {
