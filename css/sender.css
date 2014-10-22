@@ -5,6 +5,10 @@ html, body, #wrapper {
    padding: 0;
    border: 0;
 }
+body{
+  background: url("../images/mainbg.png") top center;
+}
+
 #wrapper td {
    vertical-align: middle;
    text-align: center;

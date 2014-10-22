@@ -16,32 +16,36 @@
       }
 
 $(document).ready(function(){
-  $('.tabs').click(function(){
+  $('.tabs').click(function(e){
+    e.preventDefault();
     $('.tabs').removeClass('selected');
     $(this).addClass('selected');
+  });
+
+  $('.cast').click(function(e){
+    e.preventDefault();
+    onStart();
   });
 });
     </script>
     <style>
-      .tabs, .cast{
-        border: 1px solid black;
-padding: 10px 20px;
+      .tabs{
+        color:grey;
       }
 
       .selected{
-        background: black;
-color: white;
+color: red;
       }
     </style>
 	</head>
 
 	<body>
-
-    <button class="cast" onclick="onStart()">Cast</button>
-    <button id="tab1" style="display:none" class="tabs selected" onclick="update('1')">All</button>
-    <button id="tab2" style="display:none" class="tabs" onclick="update('2')">Live</button>
-    <button id="tab3" style="display:none" class="tabs" onclick="update('3')">Finished</button>
-
+    
+    <a href="" style="display:block;width:40px;height:40px;margin:25px" class="cast"><img width="40px" src="images/casticon.png" alt=""/></a>
+    <div style="margin:10px">
+      <a href="" id="tab1" style="display:none" class="tabs selected" onclick="update('1')">Football</a> |
+      <a href="" id="tab2" style="display:none" class="tabs" onclick="update('2')">Tennis</a>
+  </div>
 		<!-- <table id="wrapper">
 			<tr>
 				<td>
